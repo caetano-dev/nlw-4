@@ -1,11 +1,11 @@
 import React from "react";
+import Head from "next/head";
+import styles from "../styles/pages/home.module.css";
 import { CompletedChallenges } from "../components/CompletedChallenges";
 import { ExperienceBar } from "../components/ExperienceBar";
-import { Profile } from '../components/Profile'
-import { Countdown } from '../components/Countdown'
-import Head from 'next/head'
-import styles from '../styles/pages/home.module.css'
-
+import { Profile } from "../components/Profile";
+import { Countdown } from "../components/Countdown";
+import { ChallengeBox } from "../components/ChallengeBox";
 
 export default function Home() {
   return (
@@ -13,17 +13,15 @@ export default function Home() {
       <Head>
         <title>move.it</title>
       </Head>
-
       <ExperienceBar />
-
       <section>
         <div>
           <Profile />
           <CompletedChallenges />
-          <Countdown/>
+          <Countdown />
         </div>
         <div>
-
+          <ChallengeBox />
         </div>
       </section>
     </div>
